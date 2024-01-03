@@ -15,12 +15,11 @@
 ## Tasks
 
 - Task 0 - Modify
-
   - function taskFirst to instantiate variables using const
   - function taskNext to instantiate variables using let
 
-- Task 0 -
-- Task 0 -
+- Task 1 -
+- Task 2 -
 - Task 0 -
 - Task 0 -
 - Task 0 -
