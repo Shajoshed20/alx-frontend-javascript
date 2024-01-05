@@ -39,53 +39,59 @@
     - Constructor attributes:
         - amount (Number)
         - currency (Currency)
-    - Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
+    - Each attribute must be stored in an “underscore” attribute version (ex: `name` is stored in `_name`)
     - Implement a getter and setter for each attribute.
     - Implement a method named displayFullPrice that returns the attributes in the following format amount currency_name (currency_code).
     - Implement a static method named convertPrice. It should accept two arguments: amount (Number), conversionRate (Number). The function should return the amount multiplied by the conversion rate.
 
-* Task 5 - Implement a class named Building:
+* Task 5 - Implement a class named `Building`:
     - Constructor attributes:
-        - sqft (Number)
-    - Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
+        - `sqft` (Number)
+    - Each attribute must be stored in an “underscore” attribute version (ex: `name` is stored in `_name`)
     - Implement a getter for each attribute.
     - Consider this class as an abstract class. And make sure that any class that extends from it should implement a method named evacuationWarningMessage.
     - If a class that extends from it does not have a evacuationWarningMessage method, throw an error with the message Class extending Building must override evacuationWarningMessage
 
 * Task 6 - Import Building from 5-building.js.
-    Implement a class named SkyHighBuilding that extends from Building:
+    Implement a class named `SkyHighBuilding` that extends from `Building`:
     - Constructor attributes:
-        - sqft (Number) (must be assigned to the parent class Building)
-        - floors (Number)
-    - Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
+        - `sqft` (Number) (must be assigned to the parent class Building)
+        - `floors` (Number)
+    - Each attribute must be stored in an “underscore” attribute version (ex: `name` is stored in `_name`)
     - Implement a getter for each attribute.
     - Override the method named evacuationWarningMessage and return the following string Evacuate slowly the NUMBER_OF_FLOORS floors.
 
-* Task 7 - Implement a class named Airport:
+* Task 7 - Implement a class named `Airport`:
     - Constructor attributes:
-        - name (String)
-        - code (String)
-    - Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
-    - The default string description of the class should return the airport code (example below).
+        - `name` (String)
+        - `code` (String)
+    - Each attribute must be stored in an “underscore” attribute version (ex: `name` is stored in `_name`)
+    - The default string description of the class should return the airport code.
 
-* Task 8 - 
-
-* Task 9 - 
-
-* Task 10 - Implement a class named Car:
+* Task 8 - Implement a class named HolbertonClass:
     - Constructor attributes:
-        - brand (String)
-        - motor (String)
-        - color (String)
-    - Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
+        - `size` (Number)
+        - `location` (String)
+    - Each attribute must be stored in an “underscore” attribute version (ex: `name` is stored in `_name`)
+    - When the class is cast into a `Number`, it should return the size.
+    - When the class is cast into a `String`, it should return the location.
+
+* Task 9 - Fix this code and make it work.
+
+* Task 10 - Implement a class named `Car`:
+    - Constructor attributes:
+        - `brand` (String)
+        - `motor` (String)
+        - `color` (String)
+    - Each attribute must be stored in an “underscore” attribute version (ex: `name` is stored in `_name`)
     - Add a method named cloneCar. This method should return a new object of the class.
 
 * Task 11 - Import Car from 10-car.js.
     Implement a class named EVCar that extends the Car class:
     - Constructor attributes:
-        - brand (String)
-        - motor (String)
-        - color (String)
-        - range (String)
-    - Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
+        - `brand` (String)
+        - `motor` (String)
+        - `color` (String)
+        - `range` (String)
+    - Each attribute must be stored in an “underscore” attribute version (ex: `name` is stored in `_name`)
     - For privacy reasons, when cloneCar is called on a EVCar object, the object returned should be an instance of Car instead of EVCar.
